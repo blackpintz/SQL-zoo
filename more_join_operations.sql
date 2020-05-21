@@ -101,7 +101,7 @@ SELECT title, COUNT(actorid)
 ;
 
 -- List all the people who have worked with 'Art Garfunkel'.
-
+ 
 SELECT DISTINCT d.name
 FROM actor d JOIN casting a ON (a.actorid=d.id)
    JOIN casting b ON (a.movieid=b.movieid)
